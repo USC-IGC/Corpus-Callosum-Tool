@@ -1,4 +1,5 @@
-# Corpus-Callosum-Tool: Segmentation, quality control and abnormality classification of the midsagittal corpus callosum
+# Corpus-Callosum-Tool: 
+## Segmentation, quality control and abnormality classification of the midsagittal corpus callosum
 
 This automated pipeline can be used for accurate Corpus Callosum (CC) segmentation across multiple MRI datasets and extract a variety of features to describe the shape of the CC. We also include an automatic quality control function to detect poor segmentations using Machine Learning.
 
