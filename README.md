@@ -4,7 +4,7 @@
 This automated pipeline can be used for accurate Corpus Callosum (CC) segmentation across multiple MRI datasets and extract a variety of features to describe the shape of the CC. We also include an automatic quality control function to detect poor segmentations using Machine Learning.
 
 ## How to use the tool:
-* Clone the github directory using: git clone https://github.com/USC-IGC/Corpus-Callosum-Tool-.git
+* Clone the github directory using: git clone https://github.com/USC-IGC/Corpus-Callosum-Tool.git
 * Create three different virtual environments using the packages mentioned in "packages" folder.
 * In run_CC.sh file:
   * Once the virtual environments are installed, add the python paths for segmentation, metrics extraction and auto QC in line 6, 9 and 12 respectively.
