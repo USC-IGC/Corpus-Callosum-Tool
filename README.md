@@ -14,4 +14,5 @@ This automated pipeline can be used for accurate Corpus Callosum (CC) segmentati
   * Set the output path folder where all the results would be generated.
 * Run all the steps one at a time and sequentially (Step 1,3 and 4 on CPU and 2 on GPU only).
 * Before running Step 2, make sure to change the available node on line 11 in generate_segmentations.py file.
-* The final output will be metrics_qc.csv in the output folder which will have all the metrics and whether the segmentations were accurate/fail.
+* The final output will be "metrics_qc.csv" in the output folder which will have all the metrics and a column "QC label" indicating whether the segmentations were accurate(0)/fail(1).
+
