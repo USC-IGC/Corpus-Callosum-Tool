@@ -8,8 +8,8 @@ This automated pipeline can be used for accurate Corpus Callosum (CC) segmentati
 * Create three different virtual environments using the packages mentioned in "packages" folder.
 * In run_CC.sh file:
   * Once the virtual environments are installed, add the python paths for segmentation, metrics extraction and auto QC in line 6, 9 and 12 respectively.
-  * Input: Apply bias field correction (eg: ANTs N4) and skull stripping (eg: HD-BET) on T1's.
-  * Put all the skull-stripped T1's in one folder and put the path for the same on line 15.
+  * Input: Apply bias field correction (eg: ANTs N4) on T1's.
+  * Put all the bias field corrected T1's in one folder and put the path for the same on line 15.
   * Create a text file with all the subject id's of the T1's to be processed and put the path to the text file on line 18.
   * Add the model directory on line 21.
   * Set the output path folder where all the results would be generated.
