@@ -8,7 +8,7 @@ import warnings
 warnings.simplefilter("ignore")
 
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '2'
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 import numpy as np
 import cv2
@@ -23,8 +23,8 @@ from tensorflow.keras.layers import concatenate, Dropout, Lambda, MaxPooling2D,C
 from tensorflow.keras.metrics import MeanIoU,Precision,Recall
 from tqdm import tqdm
 
-gpu_devices = tf.config.experimental.list_physical_devices('GPU')
-tf.config.experimental.set_memory_growth(gpu_devices[0], True)
+# gpu_devices = tf.config.experimental.list_physical_devices('GPU')
+# tf.config.experimental.set_memory_growth(gpu_devices[0], True)
 tf.config.threading.set_inter_op_parallelism_threads(1)
 
 #Argument parser
@@ -168,7 +168,7 @@ print("Generating Overlays...")
 from joblib import Parallel, delayed
 from subprocess import DEVNULL, STDOUT, check_call
 def run_systemcall(it,path):
-    cmd1="python Draw_Overlays_Predictions_SystemCall.py --it '"+it+"' --path "+path
+    cmd1="python Draw_Overlays_Predictions_SystemCall.py --it '" + it + "' --path " + path
     check_call(cmd1.split(' '), stdout=DEVNULL, stderr=STDOUT)
 
 ls=[it for it in os.listdir(dest_dir+"/"+fol+"/Images_PNG/") if it[-4:]==".png"]
