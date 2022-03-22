@@ -2,16 +2,16 @@
 #$ -S /bin/bash
 
 # Input directory of T1
-dirI=./CC/input
+dirI=./input
 
 # Subject list for T1's to be processed
-dirS=./CC/subject_list.txt
+dirS=./subject_list.txt
 
 # Model folder path (github)
-dirM=./CC/model
+dirM=./model
 
 # Output directory 
-dirO=./CC/output
+dirO=./output
 mkdir -p ${dirO}/processed_input
 mkdir -p ${dirO}/segmentation
 mkdir -p ${dirO}/metrics
@@ -20,7 +20,7 @@ mkdir -p ${dirO}/QC
 #########################################################################################################################
 ########## DO NOT CHANGE THIS PATH ########## 
 # Python Script path 
-script=./CC/scripts
+script=./scripts
 cd ${script}
 #########################################################################################################################
 
