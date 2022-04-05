@@ -32,7 +32,7 @@ for subject in ${SUBJECTS};
 do
 
 # Register to MNI template
-flirt -in ${inpdir}/${subject}.nii.gz -ref ${modeldir}/mni_icbm152_t1_tal_nlin_sym_09a.nii -out ${T12MNI}/${subject}_MNI_6p.nii.gz -dof 6 -cost mutualinfo -omat ${T12MNI}/matrices/${subject}_T1_2MNI_6p.xfm
+flirt -in ${inpdir}/${subject}.nii.gz -ref ${modeldir}/MNI152_T1_1mm.nii.gz -out ${T12MNI}/${subject}_MNI_6p.nii.gz -dof 6 -cost mutualinfo -omat ${T12MNI}/matrices/${subject}_T1_2MNI_6p.xfm
 
 # BET and normalization
 /usr/local/fsl-5.0.9/bin/bet ${T12MNI}/${subject}_MNI_6p.nii.gz ${maskdir}/${subject}_MNI_6p.nii.gz -f 0.3 
