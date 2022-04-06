@@ -6,7 +6,7 @@ dirI=./input
 
 # Subject list for T1's to be processed
 dirS=./subject_list.txt
-subjects=(`cat ${dirS}`)
+SUBJECTS=(`cat ${dirS}`)
 
 # Model folder path (github)
 dirM=./model
@@ -38,7 +38,7 @@ python generate_segmentations.py --inp ${dirO}/processed_input/T1_norm --model_p
 
 # Step 3: Extract and Collate metrics-------> This step can be run on the CPU
 export PATH=./Anaconda3/envs/cc_pipe_metric/bin:$PATH
-for entry in ${subjects};
+for entry in "${SUBJECTS[@]}";
 do
 	python extract_metrics.py --mask ${dirO}/segmentation/nifti/${entry}_MNI_6p.nii.gz --output ${dirO}/metrics/${entry}.csv
 	echo "Done with ${entry}"
