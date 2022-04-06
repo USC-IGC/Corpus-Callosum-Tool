@@ -28,7 +28,7 @@ mkdir -p ${T12MNI}/matrices
 
 
 
-for subject in ${SUBJECTS};
+for subject in "${SUBJECTS[@]}";
 do
 
 # Register to MNI template
