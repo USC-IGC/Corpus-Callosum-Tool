@@ -17,5 +17,5 @@ This automated pipeline can be used for accurate Corpus Callosum (CC) segmentati
 * The final output will be "metrics_qc.csv" in the output folder which will have all the metrics and a column "QC label" indicating whether the segmentations were accurate(0)/fail(1).
 
 
-## If you use this code, please cite the following paper:
-### Gadewar, Shruti P., Elnaz Nourollahimoghadam, Ravi R. Bhatt, Abhinaav Ramesh, Shayan Javid, Iyad Ba Gari, Alyssa H. Zhu, Sophia Thomopoulos, Paul M. Thompson, and Neda Jahanshad. "A Comprehensive Corpus Callosum Segmentation Tool for Detecting Callosal Abnormalities and Genetic Associations from Multi Contrast MRIs." ArXiv (2023): arXiv-2305. (https://arxiv.org/abs/2305.01107)
+#### If you use this code, please cite the following paper:
+##### Gadewar, Shruti P., Elnaz Nourollahimoghadam, Ravi R. Bhatt, Abhinaav Ramesh, Shayan Javid, Iyad Ba Gari, Alyssa H. Zhu, Sophia Thomopoulos, Paul M. Thompson, and Neda Jahanshad. "A Comprehensive Corpus Callosum Segmentation Tool for Detecting Callosal Abnormalities and Genetic Associations from Multi Contrast MRIs." ArXiv (2023): arXiv-2305. (https://arxiv.org/abs/2305.01107)
