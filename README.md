@@ -1,6 +1,9 @@
 # Corpus-Callosum-Tool: 
 ## Segmentation, quality control and abnormality classification of the midsagittal corpus callosum
 
+## For the latest version of the tool, please use:
+## https://github.com/USC-LoBeS/smacc.git
+
 This automated pipeline can be used for accurate Corpus Callosum (CC) segmentation across multiple MRI datasets and extract a variety of features to describe the shape of the CC. We also include an automatic quality control function to detect poor segmentations using Machine Learning.
 
 ## How to use the tool:
@@ -18,4 +21,4 @@ This automated pipeline can be used for accurate Corpus Callosum (CC) segmentati
 
 
 #### If you use this code, please cite the following paper:
-##### Gadewar, Shruti P., Elnaz Nourollahimoghadam, Ravi R. Bhatt, Abhinaav Ramesh, Shayan Javid, Iyad Ba Gari, Alyssa H. Zhu, Sophia Thomopoulos, Paul M. Thompson, and Neda Jahanshad. "A Comprehensive Corpus Callosum Segmentation Tool for Detecting Callosal Abnormalities and Genetic Associations from Multi Contrast MRIs." ArXiv (2023): arXiv-2305. (https://arxiv.org/abs/2305.01107)
+##### S. P. Gadewar et al., "A Comprehensive Corpus Callosum Segmentation Tool for Detecting Callosal Abnormalities and Genetic Associations from Multi Contrast MRIs," 2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC), Sydney, Australia, 2023, pp. 1-4, doi: 10.1109/EMBC40787.2023.10340442.
