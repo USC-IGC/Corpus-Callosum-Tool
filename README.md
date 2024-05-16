@@ -1,10 +1,10 @@
 # Corpus-Callosum-Tool: 
 ## Segmentation, quality control and abnormality classification of the midsagittal corpus callosum
 
-## For the latest version of the tool, please use:
-## https://github.com/USC-LoBeS/smacc.git
-
 This automated pipeline can be used for accurate Corpus Callosum (CC) segmentation across multiple MRI datasets and extract a variety of features to describe the shape of the CC. We also include an automatic quality control function to detect poor segmentations using Machine Learning.
+
+## For the latest version of the tool, please use:
+https://github.com/USC-LoBeS/smacc.git
 
 ## How to use the tool:
 * Clone the github directory using: git clone https://github.com/USC-IGC/Corpus-Callosum-Tool.git
